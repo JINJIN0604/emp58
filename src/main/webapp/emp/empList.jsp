@@ -55,47 +55,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-		h1 {
-			text-align: center;
-			font-size: 40px;
- 				color: #FF5E00;
-		}
-		
-		#customers {
-		  font-family: Arial, Helvetica, sans-serif;
-		  border-collapse: collapse;
-		  width: 100%;
-		}
-		
-		#customers td, #customers th {
-		  border: 1px solid #ddd;
-		  padding: 8px;
-		}
-		
-		#customers tr:nth-child(even){background-color: #f2f2f2;}
-		
-		#customers tr:hover {background-color: #ddd;}
-		
-		#customers th {
-		  padding-top: 12px;
-		  padding-bottom: 12px;
-		  text-align: left;
-		  background-color: #FFFFFF;
-		  color: black;
-		}
-</style>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+<title>empList.jsp</title>
 </head>
 <body>
 	<!-- 메뉴 partial jsp 구성 -->
 	<div>
 		<jsp:include page="/inc/menu.jsp"></jsp:include> <!-- 상대주소 적지말기 -->
 	</div>
-	<h1>사원목록</h1>
+	<div class="container mt-3">
+	<h2 class="text-center">사원목록</h2>
 	<div>현재 페이지: <%=currentPage%></div>	
-	<table id="customers">
+	<table class="table table-hover">
 		<tr>
 			<th>사원번호</th>
 			<th>퍼스트네임</th>
@@ -133,6 +106,7 @@
 			}
 		%>
 		<a href="<%=request.getContextPath()%>/emp/empList.jsp?currentPage=<%=lastPage%>">마지막</a>
+	</div>
 	</div>	
 </body>
 </html>

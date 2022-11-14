@@ -22,41 +22,13 @@
 	// 출력(View) -> 모델데이터를 고객이 원하는 형태로 출력 -> 뷰리포트(보고서)
 %>
 <!DOCTYPE html>
-	<html>
-		<head>
-			<style>
-			h1 {
-				text-align: center;
-				font-size: 40px;
-  				color: #FF5E00;
-			}
-			
-			#customers {
-			  font-family: Arial, Helvetica, sans-serif;
-			  border-collapse: collapse;
-			  width: 100%;
-			}
-			
-			#customers td, #customers th {
-			  border: 1px solid #ddd;
-			  padding: 8px;
-			}
-			
-			#customers tr:nth-child(even){background-color: #f2f2f2;}
-			
-			#customers tr:hover {background-color: #ddd;}
-			
-			#customers th {
-			  padding-top: 12px;
-			  padding-bottom: 12px;
-			  text-align: left;
-			  background-color: #FFFFFF;
-			  color: black;
-			}
-			</style>
-
-	<meta charset="UTF-8">
-	<title>deptList</title>
+<html>
+<head>
+<meta charset="UTF-8">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+<title>deptList</title>
+	
 	</head>
 	<body>
 		<!-- 메뉴 partial jsp 구성 -->

@@ -11,7 +11,7 @@
 	
 	if(deptNo == null || deptName == null || deptNo.equals("") || deptName.equals("")){
 		String msg = URLEncoder.encode("부서번호와 부서이름을 입력하세요","utf-8"); // get방식 주소창에 문자열 인코딩
-		response.sendRedirect(request.getContextPath()+"/dept/insertDeptForm.jsp");
+		response.sendRedirect(request.getContextPath()+"/dept/updateDeptForm.jsp");
 		return;	
 	}
 	Department dept = new Department();
